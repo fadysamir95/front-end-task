@@ -1,0 +1,93 @@
+html {
+    background-color: aliceblue;
+}
+.App {
+    width: 100%;
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+h3 {
+    font-family: monospace;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid cadetblue;
+    border-radius: 10px;
+    width: 58%;
+    margin-right: 1%;
+    padding: 16px 10px;
+    font-size: 15px;
+    font-family: monospace;
+}
+input[type="text"]::placeholder {
+    color: cadetblue;
+}
+input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus {
+    outline: 0;
+}
+button {
+    background-color: cadetblue;
+    color: #fafafa;
+    border: 0;
+    padding: 12px 43px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    cursor: pointer;
+}
+button:hover, button:active, button:focus {
+    outline: 0;
+}
+.columns-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.column {
+    width: 28%;
+    margin-right: 3.5%;
+}
+.task.dragging {
+    background-color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+.droppable-col {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+div[data-rbd-droppable-id="todo"] {
+    background-color: #6befda;
+    min-height: 250px;
+}
+div[data-rbd-droppable-id="in-progress"] {
+    background-color: #e7f707;
+    min-height: 250px;
+}
+div[data-rbd-droppable-id="done"] {
+    background-color: #00cb00;
+    min-height: 250px;
+}
+.task {
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    color: #000;
+    border: 1px solid #fafafa;
+    padding: 9px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
